@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: ['https://firestore-peach.vercel.app'], // Replace this with your actual frontend URL
+    origin: ['https://firestore-peach.vercel.app/'], // Replace this with your actual frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
     allowedHeaders: ['Content-Type', 'Authorization'] // Specify allowed headers
