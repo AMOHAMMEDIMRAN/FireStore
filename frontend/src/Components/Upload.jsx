@@ -41,7 +41,7 @@ const Upload = () => {
       const downloadURL = await getDownloadURL(storageRef); // Get the download URL
 
       // Send file URL and name to backend
-      await axios.post("https://fire-store-api-wheat.vercel.app/api/files/upload", {
+      await axios.post("https://firestoreapi-ib0z.onrender.com/api/files/upload", {
         fileURL: downloadURL,
         topic: name
       });
