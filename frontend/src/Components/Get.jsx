@@ -10,7 +10,7 @@ const Get = () => {
     const fetchItems = async () => {
       try {
 
-        const response = await axios.get("https://fire-store-api-wheat.vercel.app/api/files/upload"); // Adjusted endpoint to get all files
+        const response = await axios.get("https://firestoreapi-ib0z.onrender.com/api/files/upload"); // Adjusted endpoint to get all files
         setItems(response.data); // Set the fetched items to state
       } catch (error) {
         setError("Failed to fetch items."); // Handle errors
